@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 1rem;
+  width: 100%;
+  min-height: 80px;
+  box-shadow: 0px 4px 10px 0px gray;
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+}
+header nav {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+}
+@media (max-width: 860px) {
+  header ul:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 860px) and (max-width: 860px) {
+  header ul .hamburger {
+    display: flex;
+  }
+}
+header ul li {
+  font-size: 13px;
+  line-height: 15.2px;
+  letter-spacing: 1.5px;
+  color: #837D88;
+}
+header ul li .list__item {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+header ul li .list__item:before {
+  content: "";
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  background-color: #2D2641;
+  position: absolute;
+  transition-duration: 1s;
+}
+header ul li .list__item:hover::before {
+  width: 100%;
+}
+header ul .el__btn {
+  width: 146px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 15.2px;
+  letter-spacing: 1.5px;
+  color: #2C2830;
+  border: 1px solid #2C2830;
+  background-color: white;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+header ul .el__btn:active {
+  background-color: #2C2830;
+  color: white;
+  transform: translateY(2px);
+  box-shadow: 2px 2px 2px 0px gray;
+}
+header .hamburger {
+  border: 1px solid red;
+  font-size: 20px;
+  display: none;
+}
+
+section {
+  padding: 1rem;
+  background-color: #2D2641;
+  width: 100%;
+}
+
+.section__wrapper {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 760px) {
+  .section__wrapper {
+    flex-direction: column-reverse;
+  }
+}
+.section__wrapper .section__item {
+  width: 45%;
+  color: white;
+}
+@media (max-width: 860px) {
+  .section__wrapper .section__item {
+    width: 100%;
+  }
+}
+.section__wrapper .section__item h1 {
+  font-size: 72px;
+  line-height: 64px;
+  letter-spacing: -1px;
+}
+.section__wrapper .section__item p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.section__wrapper .section__item img {
+  width: 90%;
+  position: relative;
+  bottom: -100px;
+}
+@media (max-width: 860px) {
+  .section__wrapper .section__item img {
+    bottom: 0;
+  }
+}
+
+.el__btn {
+  width: 146px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 15.2px;
+  letter-spacing: 1.5px;
+  color: white;
+  border: 1px solid #2C2830;
+  background-color: #2C2830;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+
+.el__btn:active {
+  background-color: white;
+  color: #2D2641;
+  transform: translateY(2px);
+  box-shadow: 2px 2px 2px 0px gray;
+}
+
+.card__item {
+  max-width: 1100px;
+  padding: 1rem;
+  font-size: 50%;
+}
+.card__item h1 {
+  padding: 100px;
+  font-size: 50px;
+  margin: 0 10px;
+}
+
+.card p {
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+.card__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 860px) {
+  .card__wrapper .card {
+    width: 100%;
+    margin-left: 10%;
+    text-align: center;
+  }
+}
+.card__wrapper .card__text h3 {
+  margin-top: 10px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.389px;
+  color: #2C2830;
+}
+.card__wrapper .card__text p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #837D88;
+}
+
+.text__wrapper {
+  position: relative;
+  left: 10%;
+  height: 250px;
+  width: 1100px;
+  background-color: #2C2830;
+  flex-wrap: wrap;
+}
+.text__wrapper h1 {
+  position: relative;
+  left: 80px;
+  top: 70px;
+  width: 280px;
+  color: white;
+}
+.text__wrapper button {
+  position: relative;
+  left: 80%;
+}
+
+footer {
+  max-width: 1100px;
+  margin: auto;
+  border: 2px solid red;
+  border: 3px solid #dadada;
+  margin-top: 200px;
+}
+footer img {
+  padding: 1rem;
+}
+footer img .imgs img {
+  position: relative;
+  left: 80%;
+  top: -50px;
+}/*# sourceMappingURL=style.css.map */
